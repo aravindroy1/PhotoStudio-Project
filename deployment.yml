@@ -22,7 +22,7 @@ spec:
   replicas: 1
   selector:
     matchLabels:
-      app: mongo
+      app: mongo-app
   strategy:
     type: RollingUpdate
     rollingUpdate:
@@ -31,7 +31,7 @@ spec:
   template:
     metadata:
       labels:
-        app: mongo
+        app: mongo-app
     spec:
       containers:
       - name: mongo-container
@@ -59,7 +59,7 @@ metadata:
 spec:
   type: ClusterIP
   selector:
-    app: mongo
+    app: mongo-app
   ports:
     - port: 27017
       targetPort: 27017
