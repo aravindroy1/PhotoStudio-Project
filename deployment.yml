@@ -19,7 +19,7 @@ metadata:
   name: mongo-deployment
   namespace: photo-ns
 spec:
-  replicas: 3
+  replicas: 1
   selector:
     matchLabels:
       app: mongo
@@ -59,7 +59,7 @@ metadata:
 spec:
   type: ClusterIP
   selector:
-    app: photo-app
+    app: mongo
   ports:
     - port: 27017
       targetPort: 27017
