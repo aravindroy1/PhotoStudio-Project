@@ -9,9 +9,9 @@ metadata:
   name: photo-config
   namespace: photo-ns
 data:
-  MONGODB_AUTH_URI: mongodb://mongodb-service:27017/artgallery
-  MONGODB_FEEDBACK_URI: mongodb://mongodb-service:27017/artgallery
-  MONGODB_URI: mongodb://mongodb-service:27017
+  MONGODB_AUTH_URI: mongodb://mongo:27017/artgallery
+  MONGODB_FEEDBACK_URI: mongodb://mongo:27017/artgallery
+  MONGODB_URI: mongodb://mongo:27017
 ---
 apiVersion: apps/v1
 kind: Deployment
